@@ -5,7 +5,7 @@ const geocode = require("./utils/geocode")
 const forecast = require("./utils/forecast")
 
 const app = express()
-
+const port = process.env.PORT || 3000
 
 // console.log(__dirname)
 // console.log(__filename)
@@ -101,6 +101,6 @@ app.get("*", (req, res) => {        //* is wildcard character,,,,this will run f
     })
 })
 
-app.listen(3000, () => {
-    console.log("server is up on port 3000. Click on link:: http://localhost:3000")
+app.listen(port, () => {
+    console.log(`server is up on port ${port}. Click on link:: http://localhost:${port}`)
 })
