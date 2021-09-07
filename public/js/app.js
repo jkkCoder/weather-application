@@ -3,8 +3,6 @@
 //         console.log(data)
 //     })
 // })
- 
-
 const weatherForm = document.getElementById("form")
 const search = document.querySelector("input")
 const messageOne = document.querySelector("#message-1")
@@ -32,3 +30,4 @@ weatherForm.addEventListener("submit", (e) => {
         })
     })
 })
+
