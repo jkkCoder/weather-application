@@ -42,7 +42,7 @@ app.get("/help", (req, res) => {
     res.render("help", {
         title: "help page",
         name: "jayesh",
-        helpText: "This is some useful help text"
+        helpText: "This is help page for some fucked up person"
     })
 })
 
